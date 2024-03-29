@@ -93,6 +93,10 @@ body {
     color: var(--text-color);
     background-color: var(--link-color);
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .card_content_links_navegacao:hover {
@@ -119,6 +123,7 @@ body {
 @media (width >= 1600px) {
     .card {
         width: 15%;
+        text-align: center;
     }
 }
 
@@ -126,6 +131,7 @@ body {
 @media (width <= 1200px) {
     .card {
         width: auto;
+        text-align: center;
     }
 }
 
