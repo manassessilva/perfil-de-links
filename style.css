@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     background-color: var(--background-color);
 }
 
@@ -101,11 +101,6 @@ body {
 }
 
 .baseboard {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--baseboard-color);
     font-family: var(--font-baseboard);
     font-style: normal;
     font-weight: 400;
@@ -113,59 +108,31 @@ body {
     text-align: center;
     color: var(--text-color);
     padding: 8px;
-    margin-top: 8%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: var(--baseboard-color);
+    
 }
 
+/*Responsividade Monitores*/
 @media (width >= 1600px) {
-    .baseboard {
-        margin-top: 12%;
+    .card {
+        width: 15%;
     }
 }
 
-/*Responsividade desktop*/
+/*Responsividade dispositivos menores*/
 @media (width <= 1200px) {
     .card {
         width: auto;
     }
-
-    .baseboard {
-        margin-top: 40%;
-    }
 }
 
-/*Responsividade tablets grandres*/
-@media (width <=992px) {
-    .card {
-        width: auto;
-    }
-
-    .baseboard {
-        margin-top: 40%;
-    }
-}
-
-/*Responsividade tablets*/
-@media (width <= 768px) {
-    .card {
-        width: auto;
-    }
-
-    .baseboard {
-        margin-top: 35%;
-    }
-}
-
-/*Responsividade smartphone*/
-@media (width <= 576px) {
+/*Responsividade dispositivos pequenos*/
+@media (width <= 300px) {
     .card {
         width: 80%;
-    }
-
-    .card_content_description {
-        font-size: 0.75rem;
-    }
-
-    .baseboard {
-        margin-top: 50%;
+        text-align: center;
     }
 }
