@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+
+  <link rel="stylesheet" href="./style/contact.css">
+</head>
+<body>
+    <!--Conteúdo principal da página-->
+    <main class="card">
+        <section class="card_content">
+            <h1 class="card_content_title">Envie sua solicitação, e tenha seu perfil de links <strong class="card_content_title_emphasis">totalmente personalizado</strong> </h1>
+
+            <form class="card_content_form" action="https://formsubmit.co/manasses.2830@gmail.com" method="POST">
+                <label class="card_content_form_tag" for="name">Nome</label>
+                <input class="card_content_form_input" type="text" name="name" id="name" placeholder="Nome Completo" required>
+
+                <label class="card_content_form_tag" for="email">E-mail</label>
+                <input class="card_content_form_input" type="email" name="email" id="email" placeholder="Seu e-mail" required>
+
+                <label class="card_content_form_tag" for="message">Mensagem</label>
+                <textarea class="card_content_form_input" name="message" id="message" cols="40" rows="10" placeholder="Olá! Gostaria que meu perfil fosse..." required></textarea>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://links-manasses-silva.vercel.app/">
+                
+                <button class="card_content_form_button" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!--Rodape com autoria do projeto-->
+    <footer class="baseboard">
+        <div>
+            <p>Developed by Manasses Silva</p>
+        </div>
+    </footer>
+  
+</body>
+</html>
