@@ -160,25 +160,55 @@ body {
 
 /*Responsividade Monitores*/
 @media (width >= 1600px) {
-    .card {
-        width: 15%;
+    .gratulation_content {
+        width: 30%;
+        gap: 40px;
         text-align: center;
-        gap: 120px;
     }
 }
 
-/*Responsividade dispositivos menores*/
+/*Responsividade desktop*/
 @media (width <= 1200px) {
     .card {
-        width: auto;
+        width: 40%;
+        gap: 250px;
+        text-align: center;
+    }
+}
+
+/*Responsividade tablet grandes*/
+@media (width <= 992px) {
+    .card {
+        width: 50%;
+        gap: 200px;
+        text-align: center;
+    }
+}
+
+/*Responsividade tablets pequenos*/
+@media (width <= 768px) {
+    .card {
+        width: 50%;
+        gap: 150px;
+        text-align: center;
+    }
+}
+
+/*Responsividade smartphones*/
+@media (width <= 576px) {
+    .card {
+        width: 80%;
+        gap: 120px;
         text-align: center;
     }
 }
 
 /*Responsividade dispositivos pequenos*/
-@media (width <= 300px) {
+@media (width <= 400px) {
     .card {
-        width: 80%;
+        width: 100%;
+        gap: 80px;
         text-align: center;
+        scale: 0.8;
     }
 }
