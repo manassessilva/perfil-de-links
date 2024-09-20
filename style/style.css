@@ -1,11 +1,11 @@
 :root {
-    --background-color: #070f2b;
-    --card-color: #1B1A55;
-    --link-color: #535C91;
-    --link-color-hover: #9290C3;
-    --baseboard-color: #202060;
-    --text-color: #F6F5F5;
-    --emphasis-color: #F2A71B;
+    --background-color: #080559;
+    --card-color: #420f18;
+    --link-color: #8c2539;
+    --link-color-hover: #dc5762;
+    --baseboard-color:#c6384a;
+    --text-color: #fdf3f3;
+    --emphasis-color: #f7d4d5;
 
     --font-name: "montserrat", sans-serif;
     --font-function: "inter", sans-serif;
@@ -26,7 +26,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color);
+    background-image: url(/assets/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .card {
@@ -134,7 +137,7 @@ body {
     left: 50%;
     bottom: -10px;
     border-radius: 5px;
-    background-color: var(--emphasis-color);
+    background-color: var(--card-color);
     transition: all 0.5s ease-in-out;
 }
 
