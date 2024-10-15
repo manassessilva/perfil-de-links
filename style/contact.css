@@ -1,9 +1,11 @@
 :root {
-    --background-color: #070F2B;
-    --card-color: #1B1A55;
-    --baseboard-color: #202060;
-    --text-color: #F6F5F5;
-    --emphasis-color: #F2A71B;
+    --card-color: #b63018;
+    --baseboard-color: #91271b;
+    --text-color: #fef5ee;
+    --text-color-input:#91271b; 
+    --emphasis-color: #f9cdaf;
+    --link-color: #ef7c48;
+    --link-color-hover: #ea5a25;
 
     --font-title: "montserrat", sans-serif;
     --font-tag: "inter", sans-serif;
@@ -24,7 +26,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color);
+    
+    background-image: url(/assets/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .card {
@@ -33,74 +39,76 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 50px;
-}
 
-.card_content {
-    padding: 15px 30px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background-color: var(--card-color);
-}
+    .card_content {
+        padding: 15px 30px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: var(--card-color);
 
-.card_content_title{
-    font-family: var(--font-title);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--text-color);
-    text-align: center;
-    margin-top: 5px;
-}
+        .card_content_title{
+            font-family: var(--font-title);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            text-align: center;
+            margin-top: 5px;
+    
+            .card_content_title_emphasis {
+                color: var(--emphasis-color);
+            }
+        }
+    
+        .card_content_form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
 
-.card_content_title_emphasis {
-    color: var(--emphasis-color);
-}
+            .card_content_form_tag {
+                font-family: var(--font-tag);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.875rem;
+                color: var(--text-color);
+                margin-top: 15px;
+            }
+            
+            .card_content_form_input {
+                font-family: var(--font-description);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.75rem;
+                color: var(--text-color-input);
+            
+                padding: 10px;
+                border-radius: 8px;
+                border: none;
+                background-color: var(--text-color);
 
-.card_content_form {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
+                .card_content_form_input:focus {
+                    outline: 3px solid var(--emphasis-color);
+                }
+            }
 
-.card_content_form_tag {
-    font-family: var(--font-tag);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    color: var(--text-color);
-    margin-top: 15px;
-}
-
-.card_content_form_input {
-    font-family: var(--font-description);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.75rem;
-
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-}
-
-.card_content_form_input:focus {
-    outline: 3px solid var(--emphasis-color);
-}
-
-.card_content_form_button {
-    font-family: var(--font-tag);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 0.875rem;
-    color: var(--text-color);
-    background-color: var(--emphasis-color);
-    cursor: pointer;
-    margin-top: 15px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    padding: 8px;
+            .card_content_form_button {
+                font-family: var(--font-tag);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 0.875rem;
+                color: var(--text-color);
+                background-color: var(--link-color);
+                cursor: pointer;
+                margin-top: 15px;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+                padding: 8px;
+            }
+        }
+    } 
 }
 
 .baseboard {
@@ -116,8 +124,6 @@ body {
     bottom: 0px;
     background-color: var(--baseboard-color);
 }
-
-
 
 /*Responsividade Monitores*/
 @media (width >= 1600px) {

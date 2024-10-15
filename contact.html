@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
 
-  <link rel="stylesheet" href="./style/contact.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicite seu Perfil de Links</title>
+    <link rel="icon" href="./assets/ms_logo.png"> <!--Icone da aba-->
+    <meta name="author" content="Manassés Silva - Desenvolverdor Front-end"> <!--Autor-->
+    <meta name="description" content="Solicite a criação do seu perfil de links, e tenha todos os links que você acha interessante em apenas um lugar. 
+    Assim, seu cliente poderá acessar de forma mais rápida e precisa os serviços ofericidos. Tudo isso de forma
+    totalmente personalizada de acordo com o seu projeto."> <!--Descrição da página-->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Desenvolvimento web, Git, GitHub, link, links, perfil, perfil de links"> <!--palavras-chave-->
+    
+    <!--Estilização CSS-->
+    <link rel="stylesheet" href="./style/contact.css">
+
+    <!--importação fonte Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Importação fonte Montsserat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!--Conteúdo principal da página-->
     <main class="card">
         <section class="card_content">
-            <h1 class="card_content_title">Envie sua solicitação, e tenha seu perfil de links <strong class="card_content_title_emphasis">totalmente personalizado</strong> </h1>
+            <h1 class="card_content_title">Envie sua solicitação, e tenha seu perfil de links <strong
+                    class="card_content_title_emphasis">totalmente personalizado</strong> </h1>
 
             <form class="card_content_form" action="https://formsubmit.co/manasses.2830@gmail.com" method="POST">
                 <label class="card_content_form_tag" for="name">Nome</label>
-                <input class="card_content_form_input" type="text" name="name" id="name" placeholder="Nome Completo" required>
+                <input class="card_content_form_input" type="text" name="name" id="name" placeholder="Nome Completo"
+                    required>
 
                 <label class="card_content_form_tag" for="email">E-mail</label>
-                <input class="card_content_form_input" type="email" name="email" id="email" placeholder="Seu e-mail" required>
+                <input class="card_content_form_input" type="email" name="email" id="email" placeholder="Seu e-mail"
+                    required>
 
                 <label class="card_content_form_tag" for="message">Mensagem</label>
-                <textarea class="card_content_form_input" name="message" id="message" cols="40" rows="10" placeholder="Olá! Gostaria que meu perfil fosse..." required></textarea>
+                <textarea class="card_content_form_input" name="message" id="message" cols="40" rows="10"
+                    placeholder="Olá! Gostaria que meu perfil fosse..." required></textarea>
 
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://perfil-social-envio.vercel.app/" >
-                
+                <input type="hidden" name="_next" value="https://perfil-social-envio.vercel.app/">
+
                 <button class="card_content_form_button" type="submit">Enviar</button>
             </form>
         </section>
@@ -37,6 +60,7 @@
             <p>Developed by Manasses Silva</p>
         </div>
     </footer>
-  
+
 </body>
+
 </html>
